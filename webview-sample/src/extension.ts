@@ -189,12 +189,6 @@ class CatCodingPanel {
 			<head>
 				<meta charset="UTF-8">
 
-				<!--
-					Use a content security policy to only allow loading images from https or from our extension directory,
-					and only allow scripts that have a specific nonce.
-				-->
-				<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${webview.cspSource}; img-src ${webview.cspSource} https:; script-src 'nonce-${nonce}';">
-
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 				<link href="${stylesResetUri}" rel="stylesheet">
@@ -205,6 +199,8 @@ class CatCodingPanel {
 			<body>
 				<img src="${catGifPath}" width="300" />
 				<h1 id="lines-of-code-counter">0</h1>
+
+				<iframe src="https://devtools.azureedge.net/serve_file/@2f31ea24c029d582f5472682b25153751b8021b3/inspector.html" width="800" height="600" />
 
 				<script nonce="${nonce}" src="${scriptUri}"></script>
 			</body>
