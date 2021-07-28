@@ -200,7 +200,8 @@ class CatCodingPanel {
 				<img src="${catGifPath}" width="300" />
 				<h1 id="lines-of-code-counter">0</h1>
 
-				<iframe src="https://devtools.azureedge.net/serve_file/@2f31ea24c029d582f5472682b25153751b8021b3/inspector.html" width="800" height="600" />
+				<!--<iframe src="https://devtools.azureedge.net/serve_file/@2f31ea24c029d582f5472682b25153751b8021b3/inspector.html" width="800" height="600" />-->
+				<iframe src="http://localhost:3000/vscode_app.html" width="800" height="600" />
 
 				<script nonce="${nonce}" src="${scriptUri}"></script>
 			</body>
